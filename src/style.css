@@ -5,7 +5,7 @@ font-family: 'Titan One', sans-serif;
 }
 
 .weather-app {
-    background-color: rgba(162, 147, 235, 0.7);
+    background-color: rgba(162, 147, 235, 0.8);
     max-width: 600px;
     margin: 100px auto;
     padding: 30px;
@@ -73,18 +73,20 @@ main {
 }
 
 .weather-app-icon {
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 40px;
 }
 
 .weather-app-temperature {
     font-size: 120px;
     margin-left: 10px;
+    color:#1e1f49;
 }
 
 .weather-app-unit {
     font-size: 45px;
     margin-top: 20px;
+    color: #1e1f49;
 }
 footer {
     border-top: #a393eb 1.5px dotted;
