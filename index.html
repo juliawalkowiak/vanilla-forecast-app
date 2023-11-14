@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Weather forecast</title>
+    <link rel="stylesheet" href="src/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Titan+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="weather-app"> 
     <header>
         <form>
-            <input type="search" placeholder="Enter a city" required/>
-            <input type="submit" value="Search"/>
+            <input type="search" placeholder="Enter a city" required class="search-form-input"/>
+            <input type="submit" value="Search" class="search-form-button"/>
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-        <h1>Warsaw</h1>
-        <p>
+        <h1 class="weather-app-city">Warsaw</h1>
+        <p class="weather-app-details">
             Tuesday 18:11, rainy
             <br/>
-            Humidity: 88%, Wind: 5km/h, Pressure 1050hPa
+            Humidity: <strong>88%</strong>, Wind: <strong>8 km/h</strong>, Pressure <strong>1050hPa</strong>
         </p>
          </div>
-         <div>🌦 8°C</div>
+         <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌦 </div>
+            <div class="weather-app-temperature">8</div>
+            <div class="weather-app-unit">°C</div> 
+         </div>
+         </div>
     </main>  
-    <footer>Coded by 
+    <footer> Coded by 
         <a href="https://github.com/juliawalkowiak" target="_blank">Julia Walkowiak</a> hosted on
         <a href="https://github.com/juliawalkowiak/vanilla-forecast-app" target="_blank">GitHub</a> and deployed on 
         <a href="https://6553a3ed45ca410d2b579890--julkas-weather-app.netlify.app/" target="_blank">Netlify</a>   
      </footer>
+    </div>
 </body>
 </html>
